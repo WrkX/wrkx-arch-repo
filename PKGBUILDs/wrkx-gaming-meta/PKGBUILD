@@ -1,0 +1,28 @@
+# PKGBUILD for meta-package
+pkgname=wrkx-gaming-meta
+pkgver=1.0
+pkgrel=1
+pkgdesc="Meta-package for gaming"
+arch=('any')
+license=('GPL')
+depends=(
+'gamemode'
+'gamescope-nvidia'
+'heroic-games-launcher-git'
+'mangohud'
+'mangojuice'
+'protonup-git'
+'steam'
+'wine'
+'winetricks'
+)
+provides=("${pkgname}")
+conflicts=()
+replaces=()
+source=()
+md5sums=()
+
+package() {
+    # No files to install, just dependencies
+    :
+}

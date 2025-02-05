@@ -1,0 +1,64 @@
+# PKGBUILD for meta-package
+pkgname=wrkx-base-meta
+pkgver=1.0
+pkgrel=1
+pkgdesc="Meta-base"
+arch=('any')
+license=('GPL')
+depends=(
+    'amd-ucode'
+    'base'
+    'base-devel'
+    'cups'
+    'ghostscript'
+    'git'
+    'gst-plugins-good'
+    'gst-plugins-bad'
+    'kitty'
+    'linux-headers'
+    'micro'
+    'ncdu'
+    'ntfs-3g'
+    'pamixer'
+    'pavucontrol'
+    'socat'
+    'system-config-printer'
+    'ufw'
+    'wget'
+    'zsh'
+)
+makedepends=(
+    'git'          # Required to clone yay from AUR
+    'base-devel'   # Provides make, gcc, fakeroot, etc. for building
+)
+provides=("${pkgname}")
+conflicts=()
+replaces=()
+source=()
+md5sums=()
+
+prepare() {
+    echo "Bootstrapping yay..."
+
+    # Temporary directory for yay
+    temp_dir=$(mktemp -d)
+    git clone https://aur.archlinux.org/yay.git "$temp_dir"
+    cd "$temp_dir"
+
+    # Build and install yay
+    makepkg -si --noconfirm
+
+    # Clean up
+    rm -rf "$temp_dir"
+
+    echo "Yay successfully bootstrapped."
+}
+
+package() {
+    :
+}
+
+
+post_install() {
+    systemctl enable --now ufw
+}

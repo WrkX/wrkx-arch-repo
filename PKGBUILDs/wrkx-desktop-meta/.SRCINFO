@@ -1,0 +1,25 @@
+pkgbase = wrkx-desktop-meta
+	pkgdesc = Meta-package for the desktop environment
+	pkgver = 1.0
+	pkgrel = 1
+	arch = any
+	license = GPL
+	depends = catppuccin-sddm-theme-frappe
+	depends = dunst
+	depends = hyprland-git
+	depends = hypridle-git
+	depends = hyprpaper-git
+	depends = hyprpolkitagent-git
+	depends = hyprshot
+	depends = hyprswitch
+	depends = networkmanager
+	depends = network-manager-applet
+	depends = rofi-wayland
+	depends = rofi-games
+	depends = sddm
+	depends = waybar
+	depends = wlogout
+	depends = xdg-desktop-portal-hyprland-git
+	provides = wrkx-desktop-meta
+
+pkgname = wrkx-desktop-meta

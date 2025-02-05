@@ -1,0 +1,18 @@
+pkgbase = wrkx-gaming-meta
+	pkgdesc = Meta-package for gaming
+	pkgver = 1.0
+	pkgrel = 1
+	arch = any
+	license = GPL
+	depends = gamemode
+	depends = gamescope-nvidia
+	depends = heroic-games-launcher-git
+	depends = mangohud
+	depends = mangojuice
+	depends = protonup-git
+	depends = steam
+	depends = wine
+	depends = winetricks
+	provides = wrkx-gaming-meta
+
+pkgname = wrkx-gaming-meta

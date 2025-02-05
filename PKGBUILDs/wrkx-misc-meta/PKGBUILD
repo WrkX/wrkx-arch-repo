@@ -1,0 +1,43 @@
+# PKGBUILD for meta-package
+pkgname=wrkx-misc-meta
+pkgver=1.0
+pkgrel=1
+pkgdesc="Meta-package for misc packages"
+arch=('any')
+license=('GPL')
+depends=(
+'discord-canary'
+'dragon-drop'
+'fastfetch'
+'fzf'
+'g4music'
+'nvidia-open'
+'nvidia-utils'
+'ttf-jetbrains-mono-nerd'
+'ttf-jetbrains-mono'
+'lib32-nvidia-utils'
+'nvidia-settings'
+'ouch'
+'otf-font-awesome'
+'pacman-contrib-git'
+'socat'
+'stow'
+'thunar'
+'thunar-archive-plugin'
+'ttf-iosevka-nerd'
+'unarchiver'
+'xdg-desktop-portal-termfilechooser-hunkyburrito-git'
+'yazi-git'
+'zen-twilight-bin'
+'zoxide'
+)
+provides=("${pkgname}")
+conflicts=()
+replaces=()
+source=()
+md5sums=()
+
+package() {
+    # No files to install, just dependencies
+    :
+}

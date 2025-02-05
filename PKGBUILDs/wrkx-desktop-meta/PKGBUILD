@@ -1,0 +1,39 @@
+# PKGBUILD for meta-package
+pkgname=wrkx-desktop-meta
+pkgver=1.0
+pkgrel=1
+pkgdesc="Meta-package for the desktop environment"
+arch=('any')
+license=('GPL')
+depends=(
+'catppuccin-sddm-theme-frappe'
+'dunst'
+'hyprland-git'
+'hypridle-git'
+'hyprpaper-git'
+'hyprpolkitagent-git'
+'hyprshot'
+'hyprswitch'
+'networkmanager'
+'network-manager-applet'
+'rofi-wayland'
+'rofi-games'
+'sddm'
+'waybar'
+'wlogout'
+'xdg-desktop-portal-hyprland-git'
+)
+provides=("${pkgname}")
+conflicts=()
+replaces=()
+source=()
+md5sums=()
+
+package() {
+    # No files to install, just dependencies
+    :
+}
+
+post_install() {
+    systemctl enable --now sddm
+}
