@@ -17,7 +17,7 @@ jobs:
 
       - name: Install necessary packages
         run: |
-          pacman -Sy --noconfirm pacman-contrib gnupg
+          pacman -Sy --noconfirm pacman-contrib gnupg git
 
       - name: Run repo-add script
         run: |
