@@ -15,7 +15,6 @@ depends=(
     'gst-plugins-good'
     'gst-plugins-bad'
     'kitty'
-    'linux-headers'
     'micro'
     'ncdu'
     'ntfs-3g'

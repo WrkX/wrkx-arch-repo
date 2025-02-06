@@ -12,8 +12,6 @@ depends=(
 'hypridle-git'
 'hyprpaper-git'
 'hyprpolkitagent-git'
-'hyprshot'
-'hyprswitch'
 'networkmanager'
 'network-manager-applet'
 'rofi-wayland'
