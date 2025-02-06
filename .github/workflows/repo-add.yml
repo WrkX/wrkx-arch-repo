@@ -1,0 +1,49 @@
+name: Run repo-add and Push Changes
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest  # Use Arch Linux for repo-add
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install necessary packages
+        run: |
+          pacman -Sy --noconfirm pacman-contrib gnupg
+
+      - name: Run repo-add script
+        run: |
+          REPONAME="wrkx-arch-repo"
+          cd x86_64
+
+          rm -f ${REPONAME}.db
+          rm -f ${REPONAME}.files
+
+          repo-add --verify --sign ${REPONAME}.db.tar.gz *.pkg.tar.zst
+
+          rm -f ${REPONAME}.db
+          rm -f ${REPONAME}.files
+
+          mv ${REPONAME}.db.tar.gz ${REPONAME}.db
+          mv ${REPONAME}.files.tar.gz ${REPONAME}.files
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Built-in token for pushing
+        run: |
+          git add x86_64/${REPONAME}.db x86_64/${REPONAME}.files
+          git commit -m "Update repo database and files [skip ci]" || echo "No changes to commit"
+          git push origin main
