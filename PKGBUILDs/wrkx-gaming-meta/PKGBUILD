@@ -13,7 +13,7 @@ depends=(
 'mangojuice'
 'protonup-git'
 'steam'
-'wine'
+'wine-staging'
 'winetricks'
 )
 provides=("${pkgname}")
