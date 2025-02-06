@@ -3,7 +3,7 @@ name: Run repo-add and Push Changes
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - master  # Trigger on push to the main branch
 
 jobs:
   build-and-push:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Install necessary packages
         run: |
-          pacman -Sy --noconfirm pacman-contrib gnupg
+          pacman -Sy --noconfirm pacman-contrib gnupg git
 
       - name: Run repo-add script
         run: |
