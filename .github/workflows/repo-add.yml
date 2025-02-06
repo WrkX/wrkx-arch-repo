@@ -3,7 +3,7 @@ name: Run repo-add and Push Changes
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - master  # Trigger on push to the main branch
 
 jobs:
   build-and-push:
