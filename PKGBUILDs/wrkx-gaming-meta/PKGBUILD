@@ -1,6 +1,6 @@
 # PKGBUILD for meta-package
 pkgname=wrkx-gaming-meta
-pkgver=1.2
+pkgver=1.4
 pkgrel=1
 pkgdesc="Meta-package for gaming"
 arch=('any')

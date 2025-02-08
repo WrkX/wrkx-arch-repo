@@ -29,10 +29,9 @@ increment_version() {
 
 
 REPONAME="wrkx-arch-repo"
-cd  PKGBUILDs
 find . -type f -name "*.tar.zst" -exec rm -f {} \;
 
-cd wrkx-base-meta
+cd PKGBUILDs/wrkx-base-meta
 increment_version
 makepkg
 cd ../wrkx-desktop-meta

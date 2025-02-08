@@ -3,10 +3,10 @@
 pkgname = wrkx-misc-meta
 pkgbase = wrkx-misc-meta
 xdata = pkgtype=pkg
-pkgver = 1.2-1
+pkgver = 1.4-1
 pkgdesc = Meta-package for misc packages
 url = 
-builddate = 1739026764
+builddate = 1739027394
 packager = Unknown Packager
 size = 0
 arch = any
