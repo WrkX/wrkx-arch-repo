@@ -1,6 +1,14 @@
 REPONAME="wrkx-arch-repo"
+cd  PKGBUILDs/wrkx-base-meta
+makepkg
+cd ../wrkx-desktop-meta
+makepkg
+cd ../wrkx-gaming-meta
+makepkg
+cd ../wrkx-misc-meta
+makepkg
 
-cd x86_64
+cd ../../x86_64
 
 rm -f ${REPONAME}.db
 rm -f ${REPONAME}.files
