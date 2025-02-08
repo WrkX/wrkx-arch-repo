@@ -1,11 +1,11 @@
 format = 2
 pkgname = wrkx-desktop-meta
 pkgbase = wrkx-desktop-meta
-pkgver = 1.0-1
+pkgver = 1.2-1
 pkgarch = any
-pkgbuild_sha256sum = e394901cbaa4de4e3f8e7825f740066d3551961cc50050eed19c6e6a574bc43f
+pkgbuild_sha256sum = 79695bd24022edc47e34a4cfe1b182cade8140487db009567830efceeeac0b2d
 packager = Unknown Packager
-builddate = 1739026063
+builddate = 1739026761
 builddir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-desktop-meta
 startdir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-desktop-meta
 buildtool = makepkg

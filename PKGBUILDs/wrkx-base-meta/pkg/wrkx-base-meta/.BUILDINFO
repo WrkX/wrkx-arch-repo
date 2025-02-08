@@ -1,11 +1,11 @@
 format = 2
 pkgname = wrkx-base-meta
 pkgbase = wrkx-base-meta
-pkgver = 1.0-1
+pkgver = 1.2-1
 pkgarch = any
-pkgbuild_sha256sum = 19507113391a0d5b66ad2f7eda9dfcdbbb5969c3101105b0691a902f69d5eeb7
+pkgbuild_sha256sum = ac7c22b1434065d8dd67680d51bfd1ed19da56d0209ca8f388363264a588fbee
 packager = Unknown Packager
-builddate = 1739025985
+builddate = 1739026747
 builddir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-base-meta
 startdir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-base-meta
 buildtool = makepkg

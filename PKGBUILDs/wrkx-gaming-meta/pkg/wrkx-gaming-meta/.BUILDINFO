@@ -1,11 +1,11 @@
 format = 2
 pkgname = wrkx-gaming-meta
 pkgbase = wrkx-gaming-meta
-pkgver = 1.0-1
+pkgver = 1.2-1
 pkgarch = any
-pkgbuild_sha256sum = 9b83c6544d5dcd60e137229d3d670b39f69bdd6ce8e5e474193727ef31b588ab
+pkgbuild_sha256sum = 6bce1d8ad9a084ca6cc228014903d712f0ef46d0f52ea79d39ff4125a1b3620e
 packager = Unknown Packager
-builddate = 1739026064
+builddate = 1739026762
 builddir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-gaming-meta
 startdir = /home/jonas/repo/wrkx-arch-repo/PKGBUILDs/wrkx-gaming-meta
 buildtool = makepkg
