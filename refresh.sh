@@ -45,7 +45,10 @@ cd ../wrkx-misc-meta
 increment_version
 makepkg
 
-cd ../../x86_64
+cd ..
+find . -type f -name "*.tar.zst" -exec cp {} ../x86_64/ \;
+
+cd ../x86_64
 
 rm -f ${REPONAME}.db
 rm -f ${REPONAME}.files
