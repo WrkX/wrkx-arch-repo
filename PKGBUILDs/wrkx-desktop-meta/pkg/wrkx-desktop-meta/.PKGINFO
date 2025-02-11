@@ -3,10 +3,10 @@
 pkgname = wrkx-desktop-meta
 pkgbase = wrkx-desktop-meta
 xdata = pkgtype=pkg
-pkgver = 1.5-1
+pkgver = 1.6-1
 pkgdesc = Meta-package for the desktop environment
 url = 
-builddate = 1739289713
+builddate = 1739291038
 packager = Unknown Packager
 size = 0
 arch = any

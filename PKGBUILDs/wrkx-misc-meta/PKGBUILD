@@ -1,39 +1,39 @@
 # PKGBUILD for meta-package
 pkgname=wrkx-misc-meta
-pkgver=1.5
+pkgver=1.6
 pkgrel=1
 pkgdesc="Meta-package for misc packages"
 arch=('any')
 license=('GPL')
 depends=(
-'discord-canary'
-'dragon-drop'
-'fastfetch'
-'fzf'
-'g4music'
-'nvidia-open-dkms'
-'nvidia-utils'
-'lib32-nvidia-utils'
-'nvidia-settings'
-'ttf-jetbrains-mono-nerd'
-'ttf-jetbrains-mono'
-'hyprshot'
-'hyprswitch'
-'nemo'
-'ouch'
-'otf-font-awesome'
-'pacman-contrib-git'
-'plymouth'
-'plymouth-theme-cuts-git'
-'qimgv'
-'socat'
-'stow'
-'ttf-iosevka-nerd'
-'unarchiver'
-'xdg-desktop-portal-termfilechooser-hunkyburrito-git'
-'yazi-git'
-'zen-twilight-bin'
-'zoxide'
+  'discord-canary'
+  'dragon-drop'
+  'fastfetch'
+  'fzf'
+  'g4music'
+  'nvidia-open'
+  'nvidia-utils'
+  'lib32-nvidia-utils'
+  'nvidia-settings'
+  'ttf-jetbrains-mono-nerd'
+  'ttf-jetbrains-mono'
+  'hyprshot'
+  'hyprswitch'
+  'nemo'
+  'ouch'
+  'otf-font-awesome'
+  'pacman-contrib-git'
+  'plymouth'
+  'plymouth-theme-cuts-git'
+  'qimgv'
+  'socat'
+  'stow'
+  'ttf-iosevka-nerd'
+  'unarchiver'
+  'xdg-desktop-portal-termfilechooser-hunkyburrito-git'
+  'yazi-git'
+  'zen-twilight-bin'
+  'zoxide'
 )
 provides=("${pkgname}")
 conflicts=()
@@ -42,6 +42,6 @@ source=()
 md5sums=()
 
 package() {
-    # No files to install, just dependencies
-    :
+  # No files to install, just dependencies
+  :
 }
