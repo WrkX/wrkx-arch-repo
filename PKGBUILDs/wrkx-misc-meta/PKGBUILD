@@ -1,6 +1,6 @@
 # PKGBUILD for meta-package
 pkgname=wrkx-misc-meta
-pkgver=1.4
+pkgver=1.5
 pkgrel=1
 pkgdesc="Meta-package for misc packages"
 arch=('any')
@@ -11,7 +11,7 @@ depends=(
 'fastfetch'
 'fzf'
 'g4music'
-'nvidia-open'
+'nvidia-open-dkms'
 'nvidia-utils'
 'lib32-nvidia-utils'
 'nvidia-settings'
@@ -19,13 +19,15 @@ depends=(
 'ttf-jetbrains-mono'
 'hyprshot'
 'hyprswitch'
+'nemo'
 'ouch'
 'otf-font-awesome'
 'pacman-contrib-git'
+'plymouth'
+'plymouth-theme-cuts-git'
+'qimgv'
 'socat'
 'stow'
-'thunar'
-'thunar-archive-plugin'
 'ttf-iosevka-nerd'
 'unarchiver'
 'xdg-desktop-portal-termfilechooser-hunkyburrito-git'

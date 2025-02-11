@@ -3,10 +3,10 @@
 pkgname = wrkx-gaming-meta
 pkgbase = wrkx-gaming-meta
 xdata = pkgtype=pkg
-pkgver = 1.4-1
+pkgver = 1.5-1
 pkgdesc = Meta-package for gaming
 url = 
-builddate = 1739027393
+builddate = 1739289714
 packager = Unknown Packager
 size = 0
 arch = any

@@ -3,10 +3,10 @@
 pkgname = wrkx-base-meta
 pkgbase = wrkx-base-meta
 xdata = pkgtype=pkg
-pkgver = 1.4-1
+pkgver = 1.5-1
 pkgdesc = Meta-base
 url = 
-builddate = 1739027380
+builddate = 1739289700
 packager = Unknown Packager
 size = 0
 arch = any
@@ -15,6 +15,7 @@ provides = wrkx-base-meta
 depend = amd-ucode
 depend = base
 depend = base-devel
+depend = btop
 depend = cliphist
 depend = cups
 depend = ghostscript
